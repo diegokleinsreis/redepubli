@@ -1,0 +1,137 @@
+.site-sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 80px;
+    height: calc(100vh - 100px);
+    /* overflow-y: auto; */ /* <-- LINHA REMOVIDA/COMENTADA PARA CORRIGIR A BARRA DE ROLAGEM DUPLA */
+}
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar-nav li a {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #050505;
+    font-weight: 500;
+    transition: background-color: 0.2s;
+}
+.sidebar-nav li a:hover {
+    background-color: #e4e6eb;
+}
+.sidebar-nav .nav-icon {
+    font-size: 1.2em;
+    width: 36px;
+    height: 32px;
+    text-align: center;
+    margin-right: 15px;
+    color: #0c2d54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar-nav hr {
+    border: none;
+    border-top: 1px solid #dddfe2;
+    margin: 8px 0;
+}
+.nav-avatar {
+    padding: 0 !important;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.nav-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- NOVOS ESTILOS PARA DROPDOWN DO MENU --- */
+.sidebar-nav .nav-link-dropdown {
+    position: relative; /* Necessário para a seta */
+}
+.sidebar-nav .dropdown-arrow {
+    margin-left: auto; /* Joga a seta para a direita */
+    font-size: 0.8em;
+    color: #606770;
+    transition: transform 0.3s ease;
+}
+.sidebar-nav .nav-link-dropdown.active .dropdown-arrow {
+    transform: rotate(180deg); /* Gira a seta para baixo quando ativo */
+}
+
+/* Estilo para o submenu */
+.sidebar-nav .nav-submenu {
+    list-style: none;
+    padding: 0 0 0 20px; /* Recuo para os sub-itens */
+    margin: -8px 0 8px 0; /* <-- ALTERADO (era -10px 0 10px 0) */
+    overflow: hidden;
+    max-height: 0; /* Começa fechado */
+    transition: max-height 0.3s ease-out;
+}
+/* A classe .is-hidden é usada pelo JS para controlar o estado */
+.sidebar-nav .nav-submenu.is-hidden {
+    max-height: 0;
+}
+/* Quando a classe .is-hidden é removida, o menu expande */
+.sidebar-nav .nav-submenu:not(.is-hidden) {
+    max-height: 200px; /* Altura máxima para a animação de expansão */
+}
+
+/* Estilos para os links dentro do submenu */
+.sidebar-nav .nav-submenu li a {
+    padding: 8px 10px; /* <-- ALTERADO (era 10px) */
+}
+.sidebar-nav .nav-submenu .nav-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 1em; /* Ícones ligeiramente menores */
+}
+
+/* --- ESTILOS PARA O BOTÃO DE TEMA (MODO ESCURO) --- */
+.theme-toggle-link .theme-icon-sun {
+    color: #f39c12; /* Cor de sol */
+    font-size: 1.2em;
+}
+.theme-toggle-link .theme-icon-moon {
+    color: #8e44ad; /* Cor de lua/noite */
+    font-size: 1.1em;
+}
+
+/* Regra para o modo escuro esconder o ícone errado */
+html.dark-mode .theme-toggle-link .theme-icon-moon {
+    display: none;
+}
+html.dark-mode .theme-toggle-link .theme-icon-sun {
+    display: block !important; /* Garante que o sol apareça */
+}
+/* Regra para o modo claro esconder o ícone errado */
+.theme-toggle-link .theme-icon-moon {
+    display: block;
+}
+.theme-toggle-link .theme-icon-sun {
+    display: none;
+}
+
+/* --- ESTILOS CORRIGIDOS PARA O TEXTO DO BOTÃO DE TEMA --- */
+
+/* Por padrão (modo claro), esconde o texto 'Modo Claro' */
+.sidebar-nav .theme-text-dark {
+    display: none;
+}
+.sidebar-nav .theme-text-light {
+    display: inline;
+}
+
+/* Quando em modo escuro, inverte */
+html.dark-mode .sidebar-nav .theme-text-dark {
+    display: inline;
+}
+html.dark-mode .sidebar-nav .theme-text-light {
+    display: none;
+}

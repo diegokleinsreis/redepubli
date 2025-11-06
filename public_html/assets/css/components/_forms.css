@@ -1,0 +1,150 @@
+/* Container principal para login/cadastro */
+.container {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+}
+.form-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.header-text {
+    text-align: left;
+}
+.icon-anchor {
+    font-size: 3em;
+    color: #0c2d54;
+    margin-bottom: 0;
+}
+
+/* Campos de input padrè´™o */
+input, select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+}
+.input-container {
+    text-align: left;
+    margin-bottom: 15px;
+}
+.input-container label {
+    font-size: 0.85em;
+    color: #606770;
+    margin-bottom: 5px;
+    display: block;
+}
+.input-container input,
+.input-container select {
+    margin-bottom: 0;
+}
+
+/* Regras para o formulè´°rio em colunas */
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    align-items: flex-end;
+}
+.form-row > * {
+    flex: 1;
+    min-width: 0;
+}
+.form-row .input-container {
+    margin-bottom: 0;
+}
+
+
+/* Aè´Æè´ÿes do formulè´°rio de Login */
+.form-actions {
+    border-top: 1px solid #dadde1;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.form-actions .link-secondary {
+    color: #0c2d54;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 5px;
+    transition: text-decoration 0.3s;
+}
+.form-actions .link-secondary:hover {
+    text-decoration: underline;
+}
+.form-actions .secondary-btn {
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.form-actions .secondary-btn:hover {
+    background-color: #36a420;
+}
+
+/* Estilo para o Botè´™o Voltar */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #fff;
+    color: #606770;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9em;
+    transition: all 0.2s;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    border: 1px solid #dddfe2;
+    z-index: 10;
+}
+.back-button:hover {
+    background-color: #f0f2f5;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+.back-button .fas {
+    margin-right: 6px;
+}
+
+/* Ajustes de espaè´Æamento APENAS para a pè´°gina de cadastro */
+.register-page-body .container {
+    margin-top: 60px; /* VALOR DIMINUè™øDO DE 80px PARA 60px */
+    margin-bottom: 40px;
+}
+.register-page-body .input-container {
+    margin-bottom: 10px;
+}
+.register-page-body .input-container input,
+.register-page-body .input-container select {
+    padding: 11px;
+}
+.register-page-body .form-row {
+    margin-bottom: 10px;
+}
+.register-page-body .primary-btn {
+    padding: 12px;
+    margin-top: 10px;
+}

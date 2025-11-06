@@ -1,0 +1,142 @@
+.site-header {
+    background-color: #fff;
+    padding: 0 20px;
+    border-bottom: 1px solid #dddfe2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 60px;
+    max-width: 1100px;
+    position: relative; /* Necessário para centralizar o título */
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0c2d54;
+    text-decoration: none;
+}
+.logo .fa-anchor {
+    margin-right: 10px;
+}
+
+/* Título Centralizado para Desktop */
+.header-title {
+    color: #0c2d54;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.logout-btn {
+    background-color: #e4e6eb;
+    color: #050505;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color: 0.3s;
+}
+.logout-btn:hover {
+    background-color: #d8dbdf;
+}
+
+/* --- CORREÇÃO PLANO B --- */
+/* Força o container do menu mobile a se esconder em telas grandes */
+.mobile-menu-container {
+    display: none !important;
+}
+
+/* Estilos do Menu Mobile */
+.mobile-menu-toggle {
+    display: none; /* Escondido por padrão em telas grandes */
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #0c2d54;
+    cursor: pointer;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+.overlay.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+.mobile-nav-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    max-width: 80%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 2000;
+    padding: 20px;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.2);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+.mobile-nav-panel.is-open {
+    transform: translateX(0);
+}
+.mobile-nav-panel .site-sidebar {
+    position: static;
+    height: auto;
+    width: 100%;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2.5em;
+    line-height: 1;
+    background: none;
+    border: none;
+    color: #606770;
+    cursor: pointer;
+}
+
+/* Regra responsiva CORRIGIDA */
+@media (max-width: 992px) {
+    .desktop-nav, .nav-link, .logo-text {
+        display: none;
+    }
+    
+    /* --- CORREÇÃO PLANO B --- */
+    /* Força o container a aparecer em telas pequenas */
+    .mobile-menu-container {
+        display: block !important;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+}

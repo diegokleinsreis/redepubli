@@ -1,0 +1,288 @@
+/* Estilos para a seção de comentários de um post */
+.post-comments-section {
+    border-top: 1px solid #e4e6eb;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+/* Estilos para a prévia dos comentários no feed */
+.comment-preview-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+.comment-preview-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.9em;
+}
+
+/* Estilos para o avatar na prévia */
+.comment-preview-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #606770;
+}
+.comment-preview-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.comment-preview-avatar .fas.fa-user {
+    font-size: 1.2em;
+}
+
+
+.comment-preview-main {
+    flex-grow: 1;
+}
+
+/* CORREÇÃO AQUI: Fundo do "balão" de comentário removido */
+.comment-preview-content {
+    background-color: transparent; /* Alterado de #f0f2f5 para transparente */
+    padding: 0;                   /* Removido o padding do balão */
+    border-radius: 0;             /* Removido o border-radius do balão */
+    word-wrap: break-word;
+}
+.comment-author {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Estilos para as ações na prévia */
+.comment-preview-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8em;
+    color: #606770;
+    margin-top: 4px;
+    padding-left: 0; /* Removido o padding esquerdo */
+}
+.comment-preview-actions a {
+    color: #606770;
+    text-decoration: none;
+    font-weight: bold;
+}
+.comment-preview-actions a:hover {
+    text-decoration: underline;
+}
+.comment-preview-actions .comment-like-btn.active {
+    color: #0866FF;
+}
+.comment-preview-actions .comment-like-count {
+    font-size: 1em;
+    color: #606770;
+}
+.comment-preview-actions .comment-like-count i {
+    color: #0866FF;
+}
+
+
+/* Links "Ver todos os comentários" e contagem de comentários */
+.view-all-comments {
+    font-size: 0.85em;
+    font-weight: 500;
+    color: #606770;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.view-all-comments:hover {
+    text-decoration: underline;
+}
+.comment-count {
+    text-decoration: none;
+    color: #606770;
+}
+.comment-count:hover {
+    text-decoration: underline;
+}
+
+/* ========================================================== */
+/* --- Estilos para a Lista Completa de Comentários --- */
+/* ========================================================== */
+
+.full-comment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.comment-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.comment-author-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.comment-author-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.comment-content {
+    flex-grow: 1;
+}
+
+.comment-bubble {
+    background-color: #f0f2f5;
+    padding: 8px 12px;
+    border-radius: 18px;
+    display: inline-block;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.comment-author-name {
+    font-weight: 600;
+    font-size: 0.85em;
+    color: #050505;
+    text-decoration: none;
+}
+.comment-author-name:hover {
+    text-decoration: underline;
+}
+
+.comment-text {
+    margin: 2px 0 0 0;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.comment-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8em;
+    color: #606770;
+    padding-left: 12px;
+    margin-top: 4px;
+}
+.comment-actions a {
+    color: #606770;
+    text-decoration: none;
+    font-weight: bold;
+}
+.comment-actions a:hover {
+    text-decoration: underline;
+}
+
+.comment-like-btn.active {
+    color: #0866FF;
+}
+
+.comment-like-count {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-size: 0.9em;
+    color: #0866FF;
+}
+
+.comment-options {
+    position: relative;
+}
+
+.comment-options-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #606770;
+    padding: 5px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+.comment-options-btn:hover {
+    background-color: #f0f2f5;
+}
+
+.comment-options-menu {
+    position: absolute;
+    right: 0;
+    top: 35px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    width: 150px;
+}
+.comment-options-menu a {
+    padding: 8px 15px;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #050505;
+}
+.comment-options-menu a:hover {
+    background-color: #f0f2f5;
+}
+
+.comment-replies {
+    padding-left: 42px; /* Alinha com o início do balão de comentário pai */
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* ========================================================== */
+/* --- REGRAS PARA O FORMULÁRIO DE COMENTÁRIO --- */
+/* ========================================================== */
+
+/* Faz com que o input e o botão fiquem lado a lado */
+.add-comment-form-container form, .reply-form-container form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Estilo do campo de texto do comentário */
+.comment-input {
+    flex-grow: 1; /* Faz o campo ocupar todo o espaço disponível */
+    padding: 8px 15px;
+    border-radius: 20px; /* Deixa as bordas arredondadas */
+    background-color: #f0f2f5;
+    border: 1px solid #e4e6eb;
+    margin-bottom: 0;
+    font-size: 0.9em;
+}
+
+/* Estilo do botão de enviar */
+.comment-submit-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #0c2d54;
+    font-size: 1.2em;
+    padding: 5px;
+}
+.comment-submit-btn:hover {
+    color: #0a2444;
+}
