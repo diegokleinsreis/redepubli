@@ -1,0 +1,75 @@
+[10-Oct-2025 00:19:55 America/Sao_Paulo] PHP Warning:  require_once(/home/klscom/public_html/api/admin/../../config/database.php): Failed to open stream: No such file or directory in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 3
+[10-Oct-2025 00:19:55 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/klscom/public_html/api/admin/../../config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 3
+[10-Oct-2025 00:20:06 America/Sao_Paulo] PHP Warning:  require_once(/home/klscom/public_html/api/admin/../../config/database.php): Failed to open stream: No such file or directory in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 3
+[10-Oct-2025 00:20:06 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/klscom/public_html/api/admin/../../config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 3
+[10-Oct-2025 00:20:16 America/Sao_Paulo] PHP Warning:  require_once(/home/klscom/public_html/api/admin/../../config/database.php): Failed to open stream: No such file or directory in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 3
+[10-Oct-2025 00:20:16 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/klscom/public_html/api/admin/../../config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 3
+[10-Oct-2025 00:22:51 America/Sao_Paulo] PHP Warning:  require_once(/home/klscom/public_html/api/admin/../../config/database.php): Failed to open stream: No such file or directory in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 3
+[10-Oct-2025 00:22:51 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/klscom/public_html/api/admin/../../config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 3
+[10-Oct-2025 00:24:27 America/Sao_Paulo] PHP Warning:  require_once(/home/klscom/public_html/api/admin/../../config/database.php): Failed to open stream: No such file or directory in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 7
+[10-Oct-2025 00:24:27 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/klscom/public_html/api/admin/../../config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 7
+[10-Oct-2025 00:26:30 America/Sao_Paulo] PHP Warning:  require_once(/home/klscom/public_html/api/admin/../../config/database.php): Failed to open stream: No such file or directory in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 7
+[10-Oct-2025 00:26:30 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/klscom/public_html/api/admin/../../config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 7
+[10-Oct-2025 00:26:35 America/Sao_Paulo] PHP Warning:  require_once(/home/klscom/public_html/api/admin/../../config/database.php): Failed to open stream: No such file or directory in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 7
+[10-Oct-2025 00:26:35 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/klscom/public_html/api/admin/../../config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 7
+[10-Oct-2025 00:38:18 America/Sao_Paulo] PHP Warning:  require_once(/home/klscom/public_html/api/admin/../../config/database.php): Failed to open stream: No such file or directory in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 7
+[10-Oct-2025 00:38:18 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/klscom/public_html/api/admin/../../config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 7
+[10-Oct-2025 00:40:41 America/Sao_Paulo] PHP Warning:  require_once(/home/klscom/public_html/api/admin/../../config/database.php): Failed to open stream: No such file or directory in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 14
+[10-Oct-2025 00:40:41 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/klscom/public_html/api/admin/../../config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 14
+[10-Oct-2025 00:40:44 America/Sao_Paulo] PHP Warning:  require_once(/home/klscom/public_html/api/admin/../../config/database.php): Failed to open stream: No such file or directory in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 14
+[10-Oct-2025 00:40:44 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/klscom/public_html/api/admin/../../config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 14
+[10-Oct-2025 00:40:48 America/Sao_Paulo] PHP Warning:  require_once(/home/klscom/public_html/api/admin/../../config/database.php): Failed to open stream: No such file or directory in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 14
+[10-Oct-2025 00:40:48 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/klscom/public_html/api/admin/../../config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 14
+[10-Oct-2025 00:40:52 America/Sao_Paulo] PHP Warning:  require_once(/home/klscom/public_html/api/admin/../../config/database.php): Failed to open stream: No such file or directory in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 14
+[10-Oct-2025 00:40:52 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/klscom/public_html/api/admin/../../config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 14
+[10-Oct-2025 00:54:21 America/Sao_Paulo] PHP Warning:  require_once(/home/klscom/public_html/api/admin/../../config/database.php): Failed to open stream: No such file or directory in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 6
+[10-Oct-2025 00:54:21 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/klscom/public_html/api/admin/../../config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 6
+[10-Oct-2025 00:54:24 America/Sao_Paulo] PHP Warning:  require_once(/home/klscom/public_html/api/admin/../../config/database.php): Failed to open stream: No such file or directory in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 6
+[10-Oct-2025 00:54:24 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/klscom/public_html/api/admin/../../config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 6
+[10-Oct-2025 00:54:52 America/Sao_Paulo] PHP Warning:  require_once(/home/klscom/public_html/api/admin/../../config/database.php): Failed to open stream: No such file or directory in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 6
+[10-Oct-2025 00:54:52 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/klscom/public_html/api/admin/../../config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/klscom/public_html/api/admin/obter_detalhes_denuncia.php on line 6
