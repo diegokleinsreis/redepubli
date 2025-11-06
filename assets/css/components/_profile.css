@@ -1,0 +1,264 @@
+.profile-page-header, .profile-nav, .upload-card, .profile-details-card, .page-section-header {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.profile-page-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+.profile-avatar-large {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.profile-avatar-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-header-info {
+    flex-grow: 1;
+}
+
+/* ===== ALTERAÇÃO FEITA AQUI ===== */
+.profile-header-info h1 {
+    font-size: 1.8em;
+    margin: 0;
+    display: flex; /* Adicionado para alinhar a bolinha */
+    align-items: center; /* Adicionado para alinhar a bolinha */
+}
+/* ===== FIM DA ALTERAÇÃO ===== */
+
+.profile-header-info p {
+    color: #606770;
+    margin: 5px 0 0 0;
+}
+.profile-nav {
+    padding: 0 10px;
+    display: flex;
+    overflow-x: auto;
+}
+.profile-nav a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #606770;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+}
+.profile-nav a:hover {
+    background-color: #f0f2f5;
+}
+.profile-nav a.active {
+    color: #0c2d54;
+    border-bottom-color: #0c2d54;
+}
+.profile-details-card h3 {
+    margin: 0 0 15px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e4e6eb;
+}
+.profile-details-card .info-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 5px;
+    border-bottom: 1px solid #f0f2f5;
+    font-size: 0.95em;
+}
+.profile-details-card .info-item:last-child {
+    border-bottom: none;
+}
+.profile-details-card .info-item i {
+    color: #8a96a3;
+    width: 25px;
+    margin-right: 15px;
+    text-align: center;
+    font-size: 1.1em;
+}
+.profile-details-card .info-item label {
+    font-weight: 600;
+    color: #606770;
+    flex-basis: 150px;
+    flex-shrink: 0;
+}
+.profile-details-card .info-item span {
+    color: #050505;
+    word-break: break-word;
+}
+.page-section-header {
+    border-left: 4px solid #0c2d54;
+}
+.page-section-header h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+.page-section-header p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #606770;
+}
+.profile-bio {
+    font-size: 0.9em;
+    color: #333;
+    margin-top: 8px;
+    line-height: 1.4;
+    font-weight: bold;
+    text-align: left;
+}
+.profile-bio a {
+    font-weight: 600;
+    color: #0c2d54;
+    text-decoration: none;
+    display: block;
+    margin-top: 4px;
+}
+.profile-bio a:hover {
+    text-decoration: underline;
+}
+
+.profile-header-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.action-btn-add,
+.action-btn-friends,
+.action-btn-pending,
+.action-btn-respond {
+    padding: 7px 14px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.85em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background-color 0.2s;
+}
+.action-btn-add i,
+.action-btn-friends i,
+.action-btn-pending i,
+.action-btn-respond i {
+    font-size: 1em;
+}
+
+.action-btn-add {
+    background-color: #0c2d54;
+    color: white;
+}
+.action-btn-add:hover {
+    background-color: #0a2444;
+}
+
+.action-btn-pending {
+    background-color: #e4e6eb;
+    color: #606770;
+    cursor: not-allowed;
+}
+
+.action-btn-friends,
+.action-btn-respond {
+    background-color: #e4e6eb;
+    color: #050505;
+}
+
+.friend-actions-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.friend-actions-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    min-width: 180px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    z-index: 10;
+    padding: 8px 0;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+}
+
+.dropdown-content a {
+    color: #050505;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+.dropdown-content a:hover {
+    background-color: #f0f2f5;
+}
+
+@media (max-width: 500px) {
+    .profile-header-info {
+        flex-basis: 100%; 
+        margin-top: 10px;
+    }
+    .profile-header-actions {
+        flex-basis: 100%;
+        justify-content: center;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+}
+
+/* --- NOVO ESTILO PARA O CARD DE PERFIL PRIVADO --- */
+.private-profile-card {
+    text-align: center;
+    padding: 40px 20px;
+}
+.private-profile-card .fa-lock {
+    font-size: 2.5em;
+    color: #606770;
+    margin-bottom: 15px;
+}
+.private-profile-card h3 {
+    font-size: 1.3em;
+    color: #050505;
+    margin: 0 0 10px 0;
+}
+.private-profile-card p {
+    color: #606770;
+    margin: 0;
+}
+
+/* --- [INÍCIO DA LÓGICA ATUALIZADA - ESTILOS DE STATUS (BOLINHA)] --- */
+.status-dot {
+    width: 10px;  /* Tamanho da bolinha */
+    height: 10px; /* Tamanho da bolinha */
+    border-radius: 50%;
+    /* ===== ALTERAÇÃO FEITA AQUI ===== */
+    margin-left: 10px;  /* Espaço DEPOIS do nome */
+    margin-right: 0px; /* Remove a margem da direita */
+    /* ===== FIM DA ALTERAÇÃO ===== */
+    flex-shrink: 0; /* Impede que a bolinha encolha */
+}
+
+.status-online {
+    background-color: #28a745; /* Verde "online" */
+    border: 1px solid #fff; /* Borda branca para destacar do fundo */
+    box-shadow: 0 0 4px #28a745; /* Efeito de brilho sutil */
+}
+/* --- [FIM DA LÓGICA ATUALIZADA] --- */

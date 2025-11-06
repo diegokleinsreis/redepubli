@@ -1,0 +1,221 @@
+/* ==========================================================
+   ESTILOS PARA A PÁGINA DE CONFIGURAÇÕES (configurar_perfil.php)
+   ========================================================== */
+
+.settings-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.settings-card h2 {
+    font-size: 1.3em;
+    color: #0c2d54;
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e4e6eb;
+    display: flex;
+    align-items: center;
+}
+
+.settings-card h2 i {
+    margin-right: 12px;
+    font-size: 0.9em;
+}
+
+.settings-card .form-group {
+    margin-bottom: 20px;
+}
+
+.settings-card label {
+    font-weight: 600;
+    font-size: 0.9em;
+    color: #333;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.settings-card input[type="text"],
+.settings-card input[type="email"],
+.settings-card input[type="date"],
+.settings-card input[type="password"],
+.settings-card select,
+.settings-card textarea {
+    width: 100%;
+    padding: 11px;
+    border-radius: 6px;
+    background-color: #f0f2f5;
+    border: 1px solid #dddfe2;
+    font-size: 1em;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.settings-card textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.settings-card .form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.settings-card .form-row .form-group {
+    flex: 1;
+}
+
+.settings-card .form-actions-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.settings-card hr {
+    border: none;
+    border-top: 1px solid #e4e6eb;
+    margin: 30px 0;
+}
+
+.settings-card .form-section-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #050505;
+    margin-bottom: 20px;
+}
+
+/* Estilos para Upload de Avatar */
+.avatar-upload-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.avatar-preview {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.avatar-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.input-file {
+    display: none;
+}
+.input-file-label {
+    background-color: #e4e6eb;
+    color: #050505;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.input-file-label:hover {
+    background-color: #d8dbdf;
+}
+
+/* Estilos para o Switch de Privacidade */
+.switch-group {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f2f5;
+}
+.form-group-description {
+    font-size: 0.9em;
+    color: #606770;
+    margin: -5px 0 15px 0;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #0c2d54;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #0c2d54;
+}
+input:checked + .slider:before {
+    transform: translateX(22px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Estilos para a Zona de Perigo */
+.danger-zone {
+    border: 1px solid #f5c6cb;
+}
+.danger-zone h2 {
+    color: #721c24;
+}
+.danger-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.danger-actions:not(:last-child) {
+    border-bottom: 1px solid #f5c6cb;
+}
+.danger-actions strong {
+    color: #721c24;
+}
+.danger-actions p {
+    font-size: 0.9em;
+    color: #606770;
+    margin: 5px 0 0 0;
+}
+.danger-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+.danger-btn:hover {
+    background-color: #c82333;
+}
